@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Countries</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="./js/bundle.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Total population: {{totalPopulation}}</h1>
+    <label for="country-select">Select a country</label>
+    <select class="" id="country-select">
+      <div v-for="country in countries">
+        <option value="country.name">{{country.name}}</option>
+      </div>
+    </select>
+  </div>
+</body>
+</html>
